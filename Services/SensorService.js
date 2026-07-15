@@ -17,28 +17,22 @@ class SensorService{
 
     registrarLectura(lectura) {
 
-        // 1) Validar la lectura
         this.validarLectura(lectura);
 
-        // 2) Buscar el sensor
         let sensor = this.buscarSensor(lectura.id);
 
-        // 3) Si existe lo actualizo, sino lo creo
         if (sensor) {
             sensor = this.actualizarSensor(sensor, lectura);
         } else {
             sensor = this.crearSensor(lectura);
         }
 
-        // 4) Evaluar si genera una alerta
         const alerta = this.evaluarAlerta(sensor);
 
-        // 5) Si hay alerta la guardo
         if (alerta) {
             this.alertas.push(alerta);
         }
 
-        // 6) Devuelvo la respuesta
         const respuesta = {
             ...sensor,
             alerta: alerta ? alerta.mensaje : null
