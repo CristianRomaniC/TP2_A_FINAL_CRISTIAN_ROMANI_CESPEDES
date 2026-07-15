@@ -1,0 +1,26 @@
+{
+  "name": "tp2_a_final_cristian_romani_cespedes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CristianRomaniC/TP2_A_FINAL_CRISTIAN_ROMANI_CESPEDES.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/CristianRomaniC/TP2_A_FINAL_CRISTIAN_ROMANI_CESPEDES/issues"
+  },
+  "homepage": "https://github.com/CristianRomaniC/TP2_A_FINAL_CRISTIAN_ROMANI_CESPEDES#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
